@@ -1,0 +1,84 @@
+.home {
+    height: 100vh;
+    background-image: url(../images/background1.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.home-content {
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .title {
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.home .home-desc {
+    margin: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.home .btn {
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.home .btn-start {
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.home .btn-learn {
+    color: #fff;
+    background-color: #1761f4;
+}
+
+.hover-opacity {
+    transition: .5s;
+}
+
+.hover-opacity:hover {
+    opacity: 0.5;
+}
+
+/* //////////////end home//////////////////   */
+@media (max-width: 1200px) {
+    .home .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .home .title {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .home {
+        height: 60vh;
+    }
+
+    .home .title {
+        font-size: 1.2rem;
+    }
+
+    .home .btn {
+        min-width: 120px;
+        font-size: 15px;
+    }
+}

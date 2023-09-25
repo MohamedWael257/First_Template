@@ -1,0 +1,111 @@
+.about {
+    /* background-color: rgb(255, 255, 255); */
+    overflow: auto;
+    padding: 150px 40px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: #1761f4;
+    margin: 5px auto;
+    border-radius: 50px;
+}
+
+.container {
+    margin: 55px;
+}
+
+.about .card {
+    float: left;
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    height: 220px;
+    width: 375px;
+}
+
+.about .card::after {
+    content: "";
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .8s width, .8s height;
+}
+
+.about .card::before {
+    content: "";
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .8s width, .8s height;
+}
+
+.about .cardd {
+    margin: 0 50px;
+}
+
+
+.about .card .icon {
+    text-align: center;
+    width: 100%;
+    color: #6195ff;
+}
+
+.about .card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    transition: .5s color;
+
+}
+
+.about .card p {
+    color: rgb(142, 142, 142);
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.about .card button {
+    color: #1761f4;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.about .card:hover.card::after,
+.about .card:hover.card::before {
+    width: 50%;
+    height: 100%;
+}
+
+.about .card:hover.card h3 {
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ////////////////end about//////////////////// */

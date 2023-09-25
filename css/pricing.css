@@ -1,0 +1,142 @@
+.pricing {
+    background-color: rgb(224, 224, 224);
+    overflow: auto;
+    padding: 100px 50px;
+}
+
+.container {
+    margin-top: 50px;
+    /* overflow: auto; */
+}
+
+.pricing .contt {
+    float: left;
+    width: 340px;
+    height: 480px;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.contt::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 15%;
+    background-color: #154ec1;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: .5s height;
+}
+
+.contt:hover::after {
+    height: 100%;
+}
+
+.contt:hover {
+    color: white;
+}
+
+.cont2 {
+    margin: 0 85px;
+    height: 50px;
+}
+
+.cont3 {
+    margin-top: 40px;
+}
+
+.recommended {
+    /* background-color: #154ec1; */
+    background-color: #0241bf;
+    padding: 18px 0;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-bottom: 1px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.plan {
+    /* background-color: #154ec1; */
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 1px 0;
+    color: white;
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+}
+
+.div img {
+    width: 25px;
+    height: 25px;
+}
+
+.div {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.par {
+    display: inline;
+}
+
+.price {
+    text-align: center;
+    margin: auto;
+    border: 2px solid #154ec1;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+.price h2 {
+    font-size: 2.3rem;
+}
+
+.contt:hover .price {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+
+.purchase {
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #154ec1;
+    color: black;
+    margin: 10px auto;
+    font-size: 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.contt:hover .purchase {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.purchase:hover {
+    background-color: #154ec1;
+    color: white
+}
+
+.spend {
+    text-align: center;
+}
