@@ -1,0 +1,92 @@
+.contact {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    padding: 80px 120px;
+}
+
+.cell {
+    float: left;
+    width: 330px;
+    height: 200px;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.cell>* {
+    margin: 10px 0;
+}
+
+.cell .icon {
+    font-size: 2rem;
+    color: #1761f4;
+}
+
+.cell h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.cell p {
+    color: rgb(144 144 144);
+}
+
+form {
+    /* background-color: blue; */
+    padding: 25px 150px;
+}
+
+form input,
+form textarea {
+    /* display: block; */
+    margin: 10px 0;
+    width: 350px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid rgb(144 144 144);
+    border-radius: 10px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+    /* outline: none; */
+    /* border: none; */
+}
+
+form .in {
+    display: block;
+    width: 705px;
+}
+
+form .sub {
+    padding: 15px;
+}
+
+form .mes {
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+form div {
+    width: 250px;
+    margin: 0 auto;
+}
+
+form button {
+    text-align: center;
+    background-color: #1761f4;
+    color: white;
+    padding: 15px 20px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .5s background;
+}
+
+form button:hover {
+    background-color: #003db8;
+}
